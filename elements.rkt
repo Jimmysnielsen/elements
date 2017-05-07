@@ -1,10 +1,13 @@
 #lang racket
-;; this file loads the latest version of elements.rkt
+
+#|
+this file contains *ELEMENTS* which is a data struct for the periodic table of elements
+By Jimmy S. Nielsen.
+
+|#
 
 
 ;; *ELEMENTS* is a non-mutable struct 
-;; the individual elements come from the underlying file
-;; first commit is elements.0.rkt
 
 (struct element (atom-nr name group classification state wt) #:transparent)
 ; atom-nr is Natural 1..118
